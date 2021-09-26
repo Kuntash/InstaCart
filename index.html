@@ -3,15 +3,14 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "css/style.css">
     <title>| Insta Cart | </title>
 </head>
 <body>
-    <!-- Nav Bar here  -->
+    <!-- Nav Bar starts  -->
     <nav class="nav">
         <div class="nav__child">
             <div class="nav__logo">
@@ -38,5 +37,31 @@
             </div>
         </div>
     </nav>
+    <!-- Navbar Ends -->
+    <!-- Home section starts -->
+    <section class="home">
+        <!-- Language Selector here -->
+        <div class="lang">
+            <img class ="lang__logo" src="images/canada.svg" alt="USA">
+            <select class = "lang__selector"name="" id="lang__selector">
+                <option value="CA" class="lang__option">CA</option>
+                <option value="US" class="lang__option">US</option>
+            </select>
+        </div>
+        <!-- Language Selector ends -->
+        <div class="header">
+            <h1 class = "header__main">
+                Order groceries for delivery or pickup today
+            </h1>
+            <h6 class = "header__sub">
+                Whatever you want from local stores, brought right to your door.
+            </h6>
+            <form class = "header__address" action="/" method="post">
+                <img class = "header__address--location" src="images/location.svg" alt="location">
+                <input class = "header__address--input type="text" name="" id="">
+                <img class = "header__address--arrow" src="images/arrow.svg" alt="right arrow">
+            </form>
+        </div>
+    </section>
 </body>
 </html>

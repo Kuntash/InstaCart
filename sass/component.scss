@@ -1,4 +1,22 @@
 /////////////////////////////////////////////
+//Langage selector
+
+.lang {
+  padding: 1rem 1rem;
+  position: relative;
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey-light);
+  display: inline-flex;
+  img {
+    width: 3rem;
+  }
+  &__selector {
+    border: none;
+  }
+}
+
+/////////////////////////////////////////////
 //Nav component
 
 .nav {
@@ -36,6 +54,10 @@
     justify-content: space-between;
     &--child {
       color: var(--color-grey);
+
+      &:hover {
+        color: var(--color-black);
+      }
     }
     &--child:not(:last-child) {
       margin-right: 5rem;
@@ -44,5 +66,45 @@
 
   &__child:nth-child(2) {
     font-size: 1.8rem;
+  }
+
+  &__child > * {
+    cursor: pointer;
+  }
+}
+
+//////////////////////////////////////////////////////
+//Home section
+.home {
+  background-color: var(--color-green-light);
+  padding: 5rem 5rem;
+  //Heading Box
+  .header {
+    max-width: 60rem;
+    margin-left: 12rem;
+    margin-top: 1rem;
+
+    //Heading
+    &__main {
+      font-size: 4.5rem;
+      font-weight: 500;
+    }
+    //Sub heading
+    &__sub {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+    //Location Form
+    &__address {
+      margin-top: 2rem;
+      &--location {
+      }
+      &--input {
+      }
+
+      &--arrow {
+      }
+    }
   }
 }

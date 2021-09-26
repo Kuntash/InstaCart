@@ -1,3 +1,18 @@
+.lang {
+  padding: 1rem 1rem;
+  position: relative;
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey-light);
+  display: inline-flex;
+}
+.lang img {
+  width: 3rem;
+}
+.lang__selector {
+  border: none;
+}
+
 .nav {
   padding: 2rem 0;
   font-size: 1.5rem;
@@ -32,13 +47,40 @@
 .nav__menu--child {
   color: var(--color-grey);
 }
+.nav__menu--child:hover {
+  color: var(--color-black);
+}
 .nav__menu--child:not(:last-child) {
   margin-right: 5rem;
 }
 .nav__child:nth-child(2) {
   font-size: 1.8rem;
 }
+.nav__child > * {
+  cursor: pointer;
+}
 
+.home {
+  background-color: var(--color-green-light);
+  padding: 5rem 5rem;
+}
+.home .header {
+  max-width: 60rem;
+  margin-left: 12rem;
+  margin-top: 1rem;
+}
+.home .header__main {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+.home .header__sub {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.home .header__address {
+  margin-top: 2rem;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -46,6 +88,7 @@
 }
 
 :root {
+  --color-green-light: #deedd6;
   --color-green: #0aad0a;
   --color-white: #ffffff;
   --color-grey: #727b87;
