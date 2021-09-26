@@ -1,0 +1,23 @@
+@import "component";
+@import "layout";
+:root {
+  --color-green: #0aad0a;
+  --color-white: #ffffff;
+  --color-grey: #727b87;
+  --color-grey-light: #e8e9eb;
+  --color-black: #000;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
