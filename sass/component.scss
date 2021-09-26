@@ -77,7 +77,8 @@
 //Home section
 .home {
   background-color: var(--color-green-light);
-  padding: 5rem 5rem;
+  padding: 5rem 5rem 10rem 5rem;
+
   //Heading Box
   .header {
     max-width: 60rem;
@@ -94,16 +95,42 @@
       margin-top: 2rem;
       font-size: 1.4rem;
       font-weight: 300;
+      letter-spacing: 1px;
     }
     //Location Form
     &__address {
+      position: relative;
+      display: flex;
+
       margin-top: 2rem;
       &--location {
+        margin-left: 1rem;
+        position: inherit;
+        width: 1.5rem;
+        margin-right: -3rem;
+        z-index: 1;
       }
       &--input {
+        z-index: 0;
+        font-family: inherit;
+        border-radius: 1rem;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+        padding-left: 5rem;
+        padding-right: 16rem;
+        border: none;
+        background-color: var(--color-white);
+        font-size: 2rem;
+        font-weight: 100;
+
+        &::placeholder {
+          font-weight: 100;
+        }
       }
 
       &--arrow {
+        margin-left: -4rem;
+        z-index: 1;
       }
     }
   }
