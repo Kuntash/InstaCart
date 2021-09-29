@@ -8,8 +8,7 @@
     "compile:css": "sass --no-source-map sass/main.scss:css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "postcss css/style.prefix.css > css/style.css",
-    "build:css": "npm-run-all compile:css prefix:css compress:css",
-    "live": "live-server watch:sass"
+    "build:css": "npm-run-all compile:css prefix:css compress:css"
   },
   "repository": {
     "type": "git",

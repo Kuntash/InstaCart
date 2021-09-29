@@ -17,13 +17,14 @@
 }
 
 /////////////////////////////////////////////
+//CTA Button
+
+.cta {
+}
+/////////////////////////////////////////////
 //Nav component
 
 .nav {
-  padding: 2rem 0;
-  font-size: 1.5rem;
-  border-bottom: 1px solid var(--color-grey-light);
-  font-weight: 500;
   &__child {
     display: flex;
     align-items: center;
@@ -76,9 +77,6 @@
 //////////////////////////////////////////////////////
 //Home section
 .home {
-  background-color: var(--color-green-light);
-  padding: 5rem 5rem 10rem 5rem;
-
   //Heading Box
   .header {
     max-width: 60rem;
@@ -131,6 +129,61 @@
       &--arrow {
         margin-left: -4rem;
         z-index: 1;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////
+//Feature section
+.feature {
+  &__heading--1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+
+  &__cards {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    &--card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 1rem;
+      background-color: var(--color-grey-lighter);
+    }
+
+    &--card:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+    &--header {
+      font-size: 3rem;
+      margin-left: 3rem;
+      margin-right: 4rem;
+      margin-top: 3rem;
+      font-weight: 500;
+    }
+
+    &--sub {
+      letter-spacing: 1px;
+      font-size: 1.8rem;
+      margin-left: 3rem;
+      margin-right: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    &--image {
+      max-height: 23rem;
+      flex: 1;
+      .feature-image {
+        width: 100%;
+        height: 100%;
       }
     }
   }
