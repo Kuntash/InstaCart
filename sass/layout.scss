@@ -26,8 +26,15 @@
   flex-direction: column;
   text-align: center;
   padding: 3rem 20rem 1rem;
+  margin-bottom: 5rem;
 }
 
-///////////////////////////////// 
+/////////////////////////////////
 //Accordion queston section
-.
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 25rem 1rem;
+}

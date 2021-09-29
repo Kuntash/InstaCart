@@ -263,3 +263,67 @@
     }
   }
 }
+
+///////////////////////////////////
+// Accordion faq
+.faq {
+  &__heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 7rem;
+  }
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--color-grey-light);
+
+    &--question {
+      cursor: pointer;
+      font-size: 3rem;
+      font-weight: 300;
+      padding-bottom: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .question {
+        max-width: 82rem;
+      }
+
+      .add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    ////////////////////
+    //Transition when clicked using javascript
+    .visible {
+      height: 100%;
+      opacity: 1;
+    }
+    &--answer {
+      transform-origin: top;
+      height: 0;
+      opacity: 0;
+
+      .faq__question--para {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+        line-height: 1.9;
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}
