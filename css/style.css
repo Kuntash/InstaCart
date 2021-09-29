@@ -13,6 +13,21 @@
   border: none;
 }
 
+.cta {
+  margin-left: -4rem;
+  font-family: inherit;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.8rem;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 2rem 12rem;
+  font-weight: 500;
+}
+.cta:hover {
+  background-color: var(--color-green-dark);
+}
+
 .nav__child {
   display: flex;
   align-items: center;
@@ -106,30 +121,33 @@
   font-size: 3.5rem;
   font-weight: 300;
 }
-.feature__cards {
+.feature__upper {
+  margin-bottom: 6rem;
+}
+.feature__cards1 {
   margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: space-between;
 }
-.feature__cards--card {
+.feature__cards1--card {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: 1rem;
   background-color: var(--color-grey-lighter);
 }
-.feature__cards--card:not(:last-child) {
+.feature__cards1--card:not(:last-child) {
   margin-right: 2.5rem;
 }
-.feature__cards--header {
+.feature__cards1--header {
   font-size: 3rem;
   margin-left: 3rem;
   margin-right: 4rem;
   margin-top: 3rem;
   font-weight: 500;
 }
-.feature__cards--sub {
+.feature__cards1--sub {
   letter-spacing: 1px;
   font-size: 1.8rem;
   margin-left: 3rem;
@@ -139,13 +157,23 @@
   font-weight: 300;
   line-height: 1.5;
 }
-.feature__cards--image {
+.feature__cards1--image {
   max-height: 23rem;
   flex: 1;
 }
-.feature__cards--image .feature-image {
+.feature__cards1--image .feature-image {
   width: 100%;
   height: 100%;
+}
+.feature__lower {
+  display: flex;
+  justify-content: center;
+}
+.feature__lower--heading {
+  font-size: 3.5rem;
+  font-weight: 300;
+  max-width: 39rem;
+  margin-right: 5rem;
 }
 
 .nav {
@@ -168,11 +196,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   padding: 3rem 20rem 1rem;
 }
 
 :root {
   --color-green-light: #deedd6;
+  --color-green-dark: #099b09;
   --color-green: #0aad0a;
   --color-white: #ffffff;
   --color-grey-lighter: #f6f7f8;
