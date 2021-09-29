@@ -205,13 +205,61 @@
 
   &__lower {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     &--heading {
       font-size: 3.5rem;
       font-weight: 300;
       max-width: 39rem;
       margin-right: 5rem;
+      margin-bottom: 5rem;
+    }
+
+    .feature__cards2 {
+      display: flex;
+      flex-direction: column;
+
+      &--big {
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        .feature-big {
+          width: 100%;
+        }
+      }
+
+      &--features {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &--feature {
+        max-width: 27.5rem;
+        border-radius: 1rem;
+        text-align: left;
+        padding: 3rem;
+        background-color: var(--color-grey-lighter);
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+
+      &--header {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-right: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      &--sub {
+        line-height: 1.3;
+        font-size: 2.5rem;
+        color: var(--color-grey);
+        font-weight: 300;
+      }
     }
   }
 }
