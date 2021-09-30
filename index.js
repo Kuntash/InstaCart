@@ -2,6 +2,8 @@
 const faqQuestions = document.querySelectorAll('.faq__question--question');
 const faqAnswers = document.querySelectorAll('.faq__question--answer');
 const faqLogo = document.querySelectorAll('.plus-logo');
+
+//Accordion
 faqQuestions.forEach((element, index) => {
     element.addEventListener('click', function(){
         faqAnswers[index].classList.toggle('visible');
@@ -16,4 +18,18 @@ faqQuestions.forEach((element, index) => {
             
         }
     });
+})
+
+//Change nation flag on option
+const langSelector = document.querySelector('#lang__selector');
+const langLogo = document.querySelector('.lang__logo');
+langSelector.addEventListener('change', function(){
+    if(langSelector.value === 'US')
+    {
+        langLogo.setAttribute('src', 'images/usa.svg');
+    }
+    else if(langSelector.value === 'CA')
+    {
+        langLogo.setAttribute('src', 'images/canada.svg');
+    }
 })
