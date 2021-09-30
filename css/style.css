@@ -51,7 +51,7 @@
 }
 .nav__signup {
   padding: 1rem 1.5rem;
-  border-radius: 100px;
+  border-radius: 2rem;
   background-color: var(--color-green);
   color: var(--color-white);
   margin-right: 4rem;
@@ -176,6 +176,7 @@
   height: 100%;
 }
 .feature__lower {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -411,6 +412,27 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+    padding: 1.4rem 0;
+    border-bottom: unset;
+  }
+  .nav__child:first-child {
+    margin-left: -2rem;
+  }
+  .nav__login {
+    margin-right: 3rem;
+  }
+  .nav__signup {
+    margin-right: 1rem;
+  }
+  .nav__menu {
+    padding: unset;
+    border: none;
+    margin-left: 0.5rem;
+    flex-direction: column;
+  }
+
   .nav__child:first-child {
     flex-direction: row-reverse;
   }
@@ -418,11 +440,8 @@
   .nav__logo {
     margin-left: 1rem;
   }
-
-  .nav__menu {
-    border: none;
-    margin-left: 0.5rem;
-    flex-direction: column;
+  .nav__logo .logo {
+    width: 11rem;
   }
 
   .hamburger {
@@ -438,15 +457,47 @@
   }
 
   .home {
-    width: 100vw;
-    padding: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem 0 3rem 1rem;
   }
   .home .header {
     margin-left: 1rem;
   }
+  .home .header__main {
+    max-width: 21rem;
+    margin-top: 13.5rem;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  .home .header__sub {
+    display: none;
+  }
+  .home .header__address {
+    text-align: center;
+  }
+  .home .header__address--location {
+    margin-left: 1.3rem;
+  }
+  .home .header__address--input {
+    padding-right: 12rem;
+  }
+
+  .cta {
+    margin-left: 3.3rem;
+    padding: 2rem 11rem;
+  }
 
   .feature {
+    text-align: left;
     padding: 1rem;
+  }
+  .feature__heading--1 {
+    font-size: 2.5rem;
+  }
+  .feature__lower--heading {
+    max-width: 35rem;
+    font-size: 2.5rem;
+    margin-right: unset;
   }
 
   .faq {
@@ -460,6 +511,10 @@
 
   .footer {
     margin: 1rem;
+  }
+
+  .feature__upper {
+    width: 100%;
   }
 
   .feature__cards1 {
@@ -478,7 +533,7 @@
     flex-direction: column;
   }
 
-  .feature__cards2--feature {
+  .feature__lower .feature__cards2--feature {
     max-width: unset;
   }
 

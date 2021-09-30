@@ -1,16 +1,36 @@
 @media only screen and (max-width: 800px) {
+  .nav {
+    justify-content: space-around;
+    padding: 1.4rem 0;
+    border-bottom: unset;
+    &__child:first-child {
+      margin-left: -2rem;
+    }
+    &__login {
+      margin-right: 3rem;
+    }
+    &__signup {
+      margin-right: 1rem;
+    }
+    &__menu {
+      padding: unset;
+      border: none;
+      margin-left: 0.5rem;
+      flex-direction: column;
+    }
+  }
   .nav__child:first-child {
     flex-direction: row-reverse;
   }
 
   .nav__logo {
     margin-left: 1rem;
+
+    .logo {
+      width: 11rem;
+    }
   }
-  .nav__menu {
-    border: none;
-    margin-left: 0.5rem;
-    flex-direction: column;
-  }
+
   .hamburger {
     display: flex;
   }
@@ -22,16 +42,51 @@
     display: none;
   }
   .home {
-    width: 100vw;
-    padding: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem 0 3rem 1rem;
 
     .header {
       margin-left: 1rem;
+
+      &__main {
+        max-width: 21rem;
+        margin-top: 13.5rem;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+      }
+
+      &__sub {
+        display: none;
+      }
+      &__address {
+        text-align: center;
+        &--location {
+          margin-left: 1.3rem;
+        }
+        &--input {
+          padding-right: 12rem;
+        }
+      }
     }
   }
-
+  .cta {
+    margin-left: 3.3rem;
+    padding: 2rem 11rem;
+  }
   .feature {
+    text-align: left;
     padding: 1rem;
+    &__heading--1 {
+      font-size: 2.5rem;
+    }
+
+    &__lower {
+      &--heading {
+        max-width: 35rem;
+        font-size: 2.5rem;
+        margin-right: unset;
+      }
+    }
   }
 
   .faq {
@@ -45,6 +100,10 @@
 
   .footer {
     margin: 1rem;
+  }
+
+  .feature__upper {
+    width: 100%;
   }
   .feature__cards1 {
     width: 100%;
@@ -61,7 +120,7 @@
   .feature__cards2--features {
     flex-direction: column;
   }
-  .feature__cards2--feature {
+  .feature__lower .feature__cards2--feature {
     max-width: unset;
   }
   .feature__cards2--feature:not(:last-child) {

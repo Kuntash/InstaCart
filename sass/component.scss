@@ -69,7 +69,7 @@
 
   &__signup {
     padding: 1rem 1.5rem;
-    border-radius: 100px;
+    border-radius: 2rem;
     background-color: var(--color-green);
     color: var(--color-white);
     margin-right: 4rem;
@@ -219,6 +219,7 @@
   }
 
   &__lower {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
