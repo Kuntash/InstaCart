@@ -271,6 +271,86 @@
   margin-bottom: 2rem;
 }
 
+.link__column {
+  display: flex;
+  flex-direction: column;
+}
+.link .instacart__logo {
+  width: 2.9rem;
+}
+.link__column:first-child > .link__header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.link__column:first-child > .link__header > p {
+  margin-left: 1.2rem;
+}
+.link__column:first-child > .link__sub {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.link__column:first-child > .link__sub .apple__logo,
+.link__column:first-child > .link__sub .android__logo {
+  width: 2.5rem;
+}
+.link__sub--ios {
+  margin-right: 3rem;
+}
+.link__sub--ios, .link__sub--android {
+  display: flex;
+  align-items: center;
+}
+.link__header {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.link__sub {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.link__sub > p {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.link__sub > p:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.footer__topic {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.footer__header .icon {
+  width: 20px;
+}
+.footer__header .icon:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer__header:first-child {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.footer__header:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__header > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.footer__header > p:first-child {
+  margin-right: 3rem;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -302,6 +382,22 @@
   justify-content: center;
   align-items: center;
   padding: 3rem 25rem 1rem;
+}
+
+.link {
+  border-top: 1px solid var(--color-grey-light);
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 20rem 1rem;
+  padding-top: 2.2rem;
+}
+
+.footer {
+  margin: 3rem 20rem 1rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid var(--color-grey-light);
+  display: flex;
+  flex-direction: column;
 }
 
 :root {

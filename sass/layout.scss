@@ -38,3 +38,24 @@
   align-items: center;
   padding: 3rem 25rem 1rem;
 }
+
+/////////////////////////////////
+//Link section
+
+.link {
+  border-top: 1px solid var(--color-grey-light);
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 20rem 1rem;
+  padding-top: 2.2rem;
+}
+
+//////////////////////////////////
+// Footer
+.footer {
+  margin: 3rem 20rem 1rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid var(--color-grey-light);
+  display: flex;
+  flex-direction: column;
+}
