@@ -32,4 +32,19 @@ langSelector.addEventListener('change', function(){
     {
         langLogo.setAttribute('src', 'images/canada.svg');
     }
-})
+});
+
+//Hamburger function
+
+const hamburger = document.querySelector('.hamburger');
+const hamburgerMenu = document.querySelector('.hamburger__menu');
+hamburger.addEventListener('click', function() {
+    if(hamburgerMenu.src.includes('images/hamburger.svg'))
+    {
+        hamburgerMenu.setAttribute('src', 'images/multiply.svg');
+    }
+    else if(hamburgerMenu.src.includes('images/multiply.svg'))
+    {
+        hamburgerMenu.setAttribute('src', 'images/hamburger.svg');
+    }
+});

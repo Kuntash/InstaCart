@@ -1,0 +1,70 @@
+@media only screen and (max-width: 800px) {
+  .nav__child:first-child {
+    flex-direction: row-reverse;
+  }
+
+  .nav__logo {
+    margin-left: 1rem;
+  }
+  .nav__menu {
+    border: none;
+    margin-left: 0.5rem;
+    flex-direction: column;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav__menu--child {
+    display: none;
+  }
+  .lang {
+    display: none;
+  }
+  .home {
+    width: 100vw;
+    padding: 1rem;
+
+    .header {
+      margin-left: 1rem;
+    }
+  }
+
+  .feature {
+    padding: 1rem;
+  }
+
+  .faq {
+    padding: 1rem;
+  }
+
+  .link {
+    margin: 1rem;
+    flex-direction: column;
+  }
+
+  .footer {
+    margin: 1rem;
+  }
+  .feature__cards1 {
+    width: 100%;
+    overflow-x: scroll;
+
+    &--card {
+      min-width: 35rem;
+    }
+  }
+
+  .feature__cards2--header {
+    margin-right: unset;
+  }
+  .feature__cards2--features {
+    flex-direction: column;
+  }
+  .feature__cards2--feature {
+    max-width: unset;
+  }
+  .feature__cards2--feature:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
