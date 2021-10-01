@@ -175,7 +175,9 @@
     margin: 1rem 0 1rem;
     padding: 3rem;
     flex-direction: column;
-
+    .arrow {
+      display: unset;
+    }
     &__column:not(:first-child) > &__sub {
       height: 0;
       opacity: 0;

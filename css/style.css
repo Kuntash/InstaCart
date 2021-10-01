@@ -592,6 +592,9 @@
     padding: 3rem;
     flex-direction: column;
   }
+  .link .arrow {
+    display: unset;
+  }
   .link__column:not(:first-child) > .link__sub {
     height: 0;
     opacity: 0;
