@@ -14,6 +14,10 @@
 //HOME section layout
 .home {
   background-color: var(--color-green-light);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-image: url("../images/home-bg-landscape.jpg");
   padding: 5rem 5rem 10rem 5rem;
 }
 

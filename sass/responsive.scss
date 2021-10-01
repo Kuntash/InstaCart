@@ -1,16 +1,23 @@
 @media only screen and (max-width: 800px) {
+  .visible-sub {
+    height: 100% !important;
+    opacity: 1 !important;
+  }
   .nav {
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1.4rem 0;
     border-bottom: unset;
     &__child:first-child {
-      margin-left: -2rem;
+      margin-left: 1rem;
     }
     &__login {
       margin-right: 3rem;
     }
+    &__child:nth-child(2) {
+      margin-right: 2rem;
+    }
     &__signup {
-      margin-right: 1rem;
+      margin-right: 2rem;
     }
     &__menu {
       padding: unset;
@@ -42,6 +49,7 @@
     display: none;
   }
   .home {
+    background-image: url("../images/home-bg-portrait.jpg");
     margin-bottom: 2.5rem;
     padding: 2rem 0 3rem 1rem;
 
@@ -76,54 +84,135 @@
   .feature {
     text-align: left;
     padding: 1rem;
+
+    &__upper {
+      width: 100%;
+    }
     &__heading--1 {
       font-size: 2.5rem;
     }
-
     &__lower {
       &--heading {
         max-width: 35rem;
         font-size: 2.5rem;
         margin-right: unset;
       }
+
+      .feature__cards2--feature {
+        max-width: unset;
+        padding: 2rem 3rem 1.5rem;
+      }
+
+      .feature__cards2--feature:not(:last-child) {
+        margin-bottom: 1.5rem;
+        margin-right: unset;
+      }
+
+      .feature__cards2--header {
+        margin-right: unset;
+        z-index: 10;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .feature__cards2--sub {
+        height: 0;
+        opacity: 0;
+        font-size: 1.7rem;
+      }
+    }
+    &__cards1 {
+      width: 100%;
+      overflow-x: scroll;
+
+      &--card {
+        min-width: 35rem;
+      }
+    }
+    &__cards2--header {
+      margin-right: unset;
+      margin-bottom: 1rem;
+    }
+    &__cards2--features {
+      flex-direction: column;
+    }
+
+    &__cards2 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      &--big {
+        height: 25rem;
+        .feature-big {
+          height: 100%;
+        }
+      }
     }
   }
 
   .faq {
-    padding: 1rem;
-  }
+    padding: 3rem;
+    margin-bottom: 3rem;
 
-  .link {
-    margin: 1rem;
-    flex-direction: column;
-  }
+    &__heading {
+      font-size: 2.5rem;
+    }
 
-  .footer {
-    margin: 1rem;
-  }
+    &__question {
+      margin-bottom: 2rem;
+      padding: 0 1rem 0 1rem;
+      &--question {
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
 
-  .feature__upper {
-    width: 100%;
-  }
-  .feature__cards1 {
-    width: 100%;
-    overflow-x: scroll;
-
-    &--card {
-      min-width: 35rem;
+        .question {
+          max-width: 29rem;
+        }
+      }
     }
   }
 
-  .feature__cards2--header {
-    margin-right: unset;
-  }
-  .feature__cards2--features {
+  .link {
+    margin: 1rem 0 1rem;
+    padding: 3rem;
     flex-direction: column;
+
+    &__column:not(:first-child) > &__sub {
+      height: 0;
+      opacity: 0;
+    }
+    &__column > &__header {
+      z-index: 100;
+      font-weight: 500;
+    }
+    &__column:first-child &__header {
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      .arrow {
+        display: none;
+      }
+    }
+    &__column:first-child &__sub {
+      justify-content: center;
+    }
+
+    &__column:nth-child(2) {
+      margin-top: 6rem;
+    }
   }
-  .feature__lower .feature__cards2--feature {
-    max-width: unset;
-  }
-  .feature__cards2--feature:not(:last-child) {
-    margin-bottom: 1.5rem;
+
+  .footer {
+    padding: 3rem 3rem 0;
+    margin: 1rem 0 3rem;
+    &__topic {
+      flex-direction: column;
+    }
+
+    &__header:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &__header:nth-child(2) {
+      justify-content: flex-start;
+    }
   }
 }

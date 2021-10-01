@@ -8,6 +8,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .lang {
   padding: 1rem 1rem;
   position: relative;
@@ -282,7 +283,14 @@
   margin-bottom: 2rem;
 }
 
+.link .arrow {
+  top: 5%;
+  right: 5%;
+  width: 2rem;
+  position: absolute;
+}
 .link__column {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -374,6 +382,10 @@
 
 .home {
   background-color: var(--color-green-light);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-image: url("../images/home-bg-landscape.jpg");
   padding: 5rem 5rem 10rem 5rem;
 }
 
@@ -412,19 +424,27 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .visible-sub {
+    height: 100% !important;
+    opacity: 1 !important;
+  }
+
   .nav {
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1.4rem 0;
     border-bottom: unset;
   }
   .nav__child:first-child {
-    margin-left: -2rem;
+    margin-left: 1rem;
   }
   .nav__login {
     margin-right: 3rem;
   }
+  .nav__child:nth-child(2) {
+    margin-right: 2rem;
+  }
   .nav__signup {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   .nav__menu {
     padding: unset;
@@ -457,6 +477,7 @@
   }
 
   .home {
+    background-image: url("../images/home-bg-portrait.jpg");
     margin-bottom: 2.5rem;
     padding: 2rem 0 3rem 1rem;
   }
@@ -491,6 +512,9 @@
     text-align: left;
     padding: 1rem;
   }
+  .feature__upper {
+    width: 100%;
+  }
   .feature__heading--1 {
     font-size: 2.5rem;
   }
@@ -499,24 +523,25 @@
     font-size: 2.5rem;
     margin-right: unset;
   }
-
-  .faq {
-    padding: 1rem;
+  .feature__lower .feature__cards2--feature {
+    max-width: unset;
+    padding: 2rem 3rem 1.5rem;
   }
-
-  .link {
-    margin: 1rem;
-    flex-direction: column;
+  .feature__lower .feature__cards2--feature:not(:last-child) {
+    margin-bottom: 1.5rem;
+    margin-right: unset;
   }
-
-  .footer {
-    margin: 1rem;
+  .feature__lower .feature__cards2--header {
+    margin-right: unset;
+    z-index: 10;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
-
-  .feature__upper {
-    width: 100%;
+  .feature__lower .feature__cards2--sub {
+    height: 0;
+    opacity: 0;
+    font-size: 1.7rem;
   }
-
   .feature__cards1 {
     width: 100%;
     overflow-x: scroll;
@@ -524,21 +549,82 @@
   .feature__cards1--card {
     min-width: 35rem;
   }
-
   .feature__cards2--header {
     margin-right: unset;
+    margin-bottom: 1rem;
   }
-
   .feature__cards2--features {
     flex-direction: column;
   }
-
-  .feature__lower .feature__cards2--feature {
-    max-width: unset;
+  .feature__cards2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .feature__cards2--big {
+    height: 25rem;
+  }
+  .feature__cards2--big .feature-big {
+    height: 100%;
   }
 
-  .feature__cards2--feature:not(:last-child) {
-    margin-bottom: 1.5rem;
+  .faq {
+    padding: 3rem;
+    margin-bottom: 3rem;
+  }
+  .faq__heading {
+    font-size: 2.5rem;
+  }
+  .faq__question {
+    margin-bottom: 2rem;
+    padding: 0 1rem 0 1rem;
+  }
+  .faq__question--question {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  .faq__question--question .question {
+    max-width: 29rem;
+  }
+
+  .link {
+    margin: 1rem 0 1rem;
+    padding: 3rem;
+    flex-direction: column;
+  }
+  .link__column:not(:first-child) > .link__sub {
+    height: 0;
+    opacity: 0;
+  }
+  .link__column > .link__header {
+    z-index: 100;
+    font-weight: 500;
+  }
+  .link__column:first-child .link__header {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .link__column:first-child .link__header .arrow {
+    display: none;
+  }
+  .link__column:first-child .link__sub {
+    justify-content: center;
+  }
+  .link__column:nth-child(2) {
+    margin-top: 6rem;
+  }
+
+  .footer {
+    padding: 3rem 3rem 0;
+    margin: 1rem 0 3rem;
+  }
+  .footer__topic {
+    flex-direction: column;
+  }
+  .footer__header:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .footer__header:nth-child(2) {
+    justify-content: flex-start;
   }
 }
 :root {

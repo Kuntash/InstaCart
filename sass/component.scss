@@ -9,8 +9,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  &__menu {
-  }
 }
 
 /////////////////////////////////////////////
@@ -348,7 +346,14 @@
 ////////////////////
 // Link section
 .link {
+  .arrow {
+    top: 5%;
+    right: 5%;
+    width: 2rem;
+    position: absolute;
+  }
   &__column {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
